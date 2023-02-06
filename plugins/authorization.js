@@ -38,7 +38,7 @@ async function authorization (fastify, opts) {
     },
     startRedirectPath: '/_app/login/github',
     // TODO: this url should change if we are in prod
-    callbackUri: 'http://localhost:3000/_app/login/github/callback',
+    callbackUri: 'http://127.0.0.1:3000/_app/login/github/callback',
     scope: ['user:email']
   })
 
